@@ -33,7 +33,7 @@ library
     , random >=1.2.1
   default-language: Haskell2010
 
-executable guess-a-number-exe
+executable guess-a-number
   main-is: Main.hs
   other-modules:
       Paths_guess_a_number
