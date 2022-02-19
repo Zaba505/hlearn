@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Instal stack
-      run: curl -sSL https://get.haskellstack.org/ | sh
     - uses: actions/checkout@v2
+    - name: Update stack cache
+      run: stack update
     - name: Cache
       uses: actions/cache@v1
       env:
